@@ -15,8 +15,9 @@ def reverse_array(array)
   array.reverse
 end
 def kesha_maker(array)
-  array.each do |word|
-    array << word.gsub(word[2], "$")
+  array.each_with_index do |word, index|
+    array[index] << word.gsub(word[2], "$")
+    index += 1
   end
 end
 def find_a(array)
