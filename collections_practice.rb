@@ -23,6 +23,10 @@ end
 def find_a(array)
 end
 def sum_array(array)
+  total = 0
+  array.each do |num|
+    total = num + total
+  end
 end
 def add_s(array)
 end
