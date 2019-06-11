@@ -24,7 +24,7 @@ def find_a(array)
   a_array = []
   array.each_with_index do |word, index|
     if word[0] == "a" || word[0] == "A"
-      a_array[index].push(array[index])
+      a_array.push(array[index])
     end
     index += 1
   end 
