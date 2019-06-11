@@ -30,4 +30,9 @@ def sum_array(array)
   total
 end
 def add_s(array)
+  array.each_with_index do |word, index|
+    if array[index] != array[1]
+      array[index] << "s"
+    end
+  end 
 end
