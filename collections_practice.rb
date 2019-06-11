@@ -21,8 +21,13 @@ def kesha_maker(array)
   end
 end
 def find_a(array)
-  a_array =
+  a_array = []
   array.each_with_index do |word, index|
+    if word[0] == "a" || word[0] == "A"
+      a_array[index] << array[index]
+    end
+  end 
+  a_array
 end
 def sum_array(array)
   total = 0
