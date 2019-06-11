@@ -8,5 +8,5 @@ def sort_array_char_count(array)
   array.sort_by(&:length)
 end
 def swap_elements(array)
-  array.swap!
+  array.swap!(array[1], array[2])
 end
